@@ -2,6 +2,8 @@
 
 - A decentralized shared library.
 - Security, compliance, monitoring, best practices, consistency and scalability.
+- Knowledge garden; gives IDWs access to knowledge bases.
+- Push, pull and store data without writing a single line of code.
 
 ## Table of contents
 
