@@ -4,6 +4,8 @@
 - Security, compliance, monitoring, best practices, consistency and scalability.
 - Knowledge garden; gives IDWs access to knowledge bases.
 - Push, pull and store data without writing a single line of code.
+- Legally audited & prepared smart contracts. Generative AI, Copilot AI assisted writing.
+- Standardized blockchain and AI solutions for managing large and highly-automated organization.
 
 ## Table of contents
 
