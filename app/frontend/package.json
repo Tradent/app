@@ -1,52 +1,70 @@
 {
-  "name": "my-near-app",
+  "name": "berry-free-material-react-remix",
   "version": "1.0.0",
-  "license": "(MIT AND Apache-2.0)",
+  "private": true,
+  "sideEffects": false,
   "scripts": {
-    "start": "./start.sh",
-    "build": "parcel build index.html --public-url ./"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
-    "@babel/preset-react": "^7.22.5",
-    "@types/node": "^20.3.2",
-    "buffer": "^5.5.0||^6.0.0",
-    "env-cmd": "^10.1.0",
-    "events": "^3.1.0",
-    "https-browserify": "^1.0.0",
-    "nodemon": "^2.0.22",
-    "parcel": "^2.9.3",
-    "process": "^0.11.10",
-    "punycode": "^1.4.1",
-    "react-test-renderer": "^18.2.0",
-    "stream-http": "^3.1.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.1.3",
-    "url": "^0.11.0"
+    "build": "remix build",
+    "dev": "concurrently \"npm run sass\" \"remix dev\"",
+    "start": "remix-serve build",
+    "typecheck": "tsc",
+    "sass": "sass --watch app/:app/"
   },
   "dependencies": {
-    "@near-wallet-selector/core": "^8.1.4",
-    "@near-wallet-selector/modal-ui": "^8.1.4",
-    "@near-wallet-selector/my-near-wallet": "^8.1.4",
-    "near-api-js": "^2.1.4",
+    "@emotion/cache": "^11.10.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/lab": "^5.0.0-alpha.121",
+    "@mui/material": "^5.11.11",
+    "@mui/system": "^5.11.11",
+    "@mui/utils": "^5.11.11",
+    "@remix-run/node": "^1.13.0",
+    "@remix-run/react": "^1.13.0",
+    "@remix-run/serve": "^1.13.0",
+    "@tabler/icons": "^2.7.0",
+    "@tabler/icons-react": "^2.7.0",
+    "apexcharts": "^3.37.1",
+    "concurrently": "^8.0.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^10.0.1",
+    "isbot": "^3.6.5",
+    "material-ui-popup-state": "^5.0.4",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
-    "regenerator-runtime": "^0.13.11"
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "yup": "^1.0.2"
   },
-  "resolutions": {
-    "@babel/preset-env": "7.13.8"
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/eslint-parser": "^7.21.3",
+    "@remix-run/dev": "^1.13.0",
+    "@remix-run/eslint-config": "^1.13.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.7",
+    "sass": "^1.60.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "engines": {
+    "node": ">=14"
   }
 }
